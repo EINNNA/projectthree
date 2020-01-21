@@ -1,20 +1,11 @@
 import React from 'react';
 import './App.css';
-import  "./background2.jpg";
+import Navbar from "./Component/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
     </div>
   );
 }
