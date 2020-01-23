@@ -69,23 +69,23 @@ module.exports = {
 
 
 //DELETING NOTES
-app.delete("/notes/:id", function (req, res) {
-    db.Note.remove({ _id: req.params.id })
-        .then(function (err) {
-            throw err;
-        }).catch(function (dbAccount) {
-            res.json(dbAccount);
-        });
-});
+// app.delete("/notes/:id", function (req, res) {
+//     db.Note.remove({ _id: req.params.id })
+//         .then(function (err) {
+//             throw err;
+//         }).catch(function (dbAccount) {
+//             res.json(dbAccount);
+//         });
+// });
 
 //DELETING ITEMS
-app.delete("/items/:id", function (req, res) {
-    db.Item.remove({ _id: req.params.id })
-        .then(function (err) {
-            throw err;
-        }).catch(function (dbAccount) {
-            res.json(dbAccount);
-        });
-});
+// app.delete("/items/:id", function (req, res) {
+//     db.Item.remove({ _id: req.params.id })
+//         .then(function (err) {
+//             throw err;
+//         }).catch(function (dbAccount) {
+//             res.json(dbAccount);
+//         });
+// });
 
 
