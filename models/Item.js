@@ -5,7 +5,7 @@ var ItemSchema = new Schema({
     name: String,
     price: String,
     picture: String,
-    date: { type: Date, default: Date.now }
+    // date: { type: Date, default: Date.now }
 });
 
 var Item = mongoose.model("Item", ItemSchema);

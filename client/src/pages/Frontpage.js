@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from "react";
+import Navbar from "./../Component/Navbar";
 import Card from '@material-ui/core/Card';
-import axios from 'axios';
 
 class Frontpage extends Component {
     state = {
@@ -8,16 +8,21 @@ class Frontpage extends Component {
         diff: "",
         snap: "",
         price: "",
-        time: ""   
+        time: ""
+    }
+    // componentDidMount() {
+    //     API.getBaseBreedsList()
+    //       .then(res => this.setState({ breeds: res.data.message }))
+    //       .catch(err => console.log(err));
+    //   };
+
+
+    render() {
+        return (
+            <Navbar/>
+        )
     }
 };
-
-// componentDidMount() {
-//     API.getBaseBreedsList()
-//       .then(res => this.setState({ breeds: res.data.message }))
-//       .catch(err => console.log(err));
-//   };
-
 
 // https://poring.world/api/search?order=popularity&rarity=&inStock=1&modified=&category=&endCategory
 

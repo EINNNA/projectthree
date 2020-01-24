@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
 import Navbar from "./Component/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Frontpage from "./pages/Frontpage";
 import Login from "./pages/Login";
-import NoMatch from "./pages/NoMatch";
+import Saved from "./pages/Saved";
 import Four04 from "./pages/404";
 
 
@@ -16,7 +15,7 @@ function App() {
         <Switch>
             <Route exact path="/" component={Frontpage} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/books/:id" component={Detail} />
+            <Route exact path="/saved/:id" component={Saved} />
             <Route component={Four04} />
           </Switch>
       </div>
